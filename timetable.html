@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class Timetable - Section A4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f6fa;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+        h1 {
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        thead th {
+            background-color: #dfe6e9;
+            color: #333;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        /* Subject soft colors */
+        .AIML { background-color: #d6eaf8; color: #000; }
+        .OOP  { background-color: #fdebd0; color: #000; }
+        .OS   { background-color: #e8daef; color: #000; }
+        .DBMS { background-color: #d5f5e3; color: #000; }
+        .FEDF { background-color: #fcf3cf; color: #000; }
+        .DAV  { background-color: #f5b7b1; color: #000; }
+        .PS   { background-color: #d1f2eb; color: #000; }
+        .Innovation { background-color: #eaecee; color: #000; }
+        .Coding     { background-color: #ccd1d1; color: #000; }
+    </style>
+</head>
+<body>
+    <h1>TT-A4</h1>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Sections</th>
+                    <th>Time/ Day</th>
+                    <th>8:15AM - 9:05AM</th>
+                    <th>9:05AM - 9:55AM</th>
+                    <th>10:10AM - 11:00AM</th>
+                    <th>11:00AM - 11:50AM</th>
+                    <th>12:45PM - 1:30PM</th>
+                    <th>1:30PM - 2:20PM</th>
+                    <th>2:20PM - 3:10PM</th>
+                    <th>3:10PM - 4:00PM</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="6">A4</td>
+                    <td>MON</td>
+                    <td class="AIML">AIML(L)</td>
+                    <td class="AIML">AIML(L)</td>
+                    <td class="OOP">OOP(T)</td>
+                    <td class="OS">OS(L)</td>
+                    <td class="DBMS">DBMS(L)</td>
+                    <td class="DBMS">DBMS(L)</td>
+                    <td class="FEDF">FEDF(S)</td>
+                    <td class="FEDF">FEDF(S)</td>
+                </tr>
+                <tr>
+                    <td>TUE</td>
+                    <td class="OS">OS(P)</td>
+                    <td class="OS">OS(P)</td>
+                    <td class="OS">OS(T)</td>
+                    <td class="DAV">DAV(L)</td>
+                    <td class="OOP">OOP(S)</td>
+                    <td class="OOP">OOP(S)</td>
+                    <td class="DAV">DAV(P)</td>
+                    <td class="DAV">DAV(P)</td>
+                </tr>
+                <tr>
+                    <td>WED</td>
+                    <td class="DBMS">DBMS(L)</td>
+                    <td class="DBMS">DBMS(L)</td>
+                    <td class="OOP">OOP(L)</td>
+                    <td class="OOP">OOP(L)</td>
+                    <td class="AIML">AIML(L)</td>
+                    <td class="AIML">AIML(L)</td>
+                    <td class="PS">P&S(T)</td>
+                    <td class="DBMS">DBMS(T)</td>
+                </tr>
+                <tr>
+                    <td>THR</td>
+                    <td class="DAV">DAV(L)</td>
+                    <td class="OS">OS(L)</td>
+                    <td class="OOP">OOP(L)</td>
+                    <td class="OOP">OOP(L)</td>
+                    <td class="FEDF">FEDF(P)</td>
+                    <td class="FEDF">FEDF(P)</td>
+                    <td class="Innovation">Innovation</td>
+                    <td class="Coding">Coding</td>
+                </tr>
+                <tr>
+                    <td>FRI</td>
+                    <td class="PS">P&S(L)</td>
+                    <td class="PS">P&S(L)</td>
+                    <td class="DBMS">DBMS(P)</td>
+                    <td class="DBMS">DBMS(P)</td>
+                    <td class="FEDF">FEDF(S)</td>
+                    <td class="FEDF">FEDF(S)</td>
+                    <td class="AIML">AIML(P)</td>
+                    <td class="AIML">AIML(P)</td>
+                </tr>
+                <tr>
+                    <td>SAT</td>
+                    <td class="OS">OS(L)</td>
+                    <td class="OS">OS(L)</td>
+                    <td class="FEDF">FEDF(L)</td>
+                    <td class="FEDF">FEDF(L)</td>
+                    <td class="AIML">AIML(T)</td>
+                    <td class="DAV">DAV(L)</td>
+                    <td class="OOP">OOP(P)</td>
+                    <td class="OOP">OOP(P)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

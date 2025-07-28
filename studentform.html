@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #cce0f5, #e6f7f1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 20px;
+      width: 350px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container input,
+    .form-container select,
+    .form-container textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .form-container label {
+      font-size: 14px;
+      display: block;
+      margin-top: 8px;
+      text-align: left;
+    }
+
+    .gender-options {
+      display: flex;
+      justify-content: flex-start;
+      gap: 20px;
+      margin: 8px 0;
+    }
+
+    .gender-options input {
+      width: auto;
+    }
+
+    .form-container input[type="file"] {
+      padding: 3px;
+    }
+
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      font-size: 12px;
+    }
+
+    .checkbox-container input {
+      width: auto;
+      margin-right: 5px;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background: linear-gradient(to right, #007bff, #00c896);
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form-container button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <form class="form-container">
+    <input type="text" placeholder="First Name" required>
+    <input type="text" placeholder="Last Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="tel" placeholder="Phone Number" required>
+    <input type="date" placeholder="Date of Birth" required>
+
+    <label>Gender</label>
+    <div class="gender-options">
+      <label><input type="radio" name="gender" value="female"> Female</label>
+      <label><input type="radio" name="gender" value="male"> Male</label>
+    </div>
+
+    <textarea placeholder="Home Address" rows="3"></textarea>
+    <input type="text" placeholder="City">
+    <input type="text" placeholder="State">
+    <input type="text" placeholder="Zip Code">
+    <input type="text" placeholder="Preferred Course">
+
+    <select>
+      <option>Choose a course</option>
+      <option>B.Tech</option>
+      <option>M.Tech</option>
+      <option>MBA</option>
+    </select>
+
+    <select>
+      <option>Hostel Accommodation</option>
+      <option>Yes</option>
+      <option>No</option>
+    </select>
+
+    <select>
+      <option>Bus Service</option>
+      <option>Yes</option>
+      <option>No</option>
+    </select>
+
+    <select>
+      <option>Scholarship</option>
+      <option>Yes</option>
+      <option>No</option>
+    </select>
+
+    <select>
+      <option>Choose B.Tech 2nd Year CSE Subject</option>
+      <option>AIML</option>
+      <option>DBMS</option>
+      <option>OS</option>
+    </select>
+
+    <input type="text" placeholder="Emergency Contact Name">
+
+    <input type="file">
+
+    <div class="checkbox-container">
+      <input type="checkbox" required> I hereby declare that the information provided is true and correct.
+    </div>
+
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
